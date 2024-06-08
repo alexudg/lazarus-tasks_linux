@@ -1,0 +1,58 @@
+object frmMain: TfrmMain
+  Left = 1274
+  Height = 268
+  Top = 250
+  Width = 398
+  Caption = 'Tareas'
+  ClientHeight = 268
+  ClientWidth = 398
+  OnShow = FormShow
+  Position = poScreenCenter
+  object Panel1: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 398
+    Align = alTop
+    TabOrder = 0
+  end
+  object bar: TStatusBar
+    Left = 0
+    Height = 19
+    Top = 249
+    Width = 398
+    Panels = <    
+      item
+        Width = 50
+      end    
+      item
+        Width = 50
+      end>
+    SimplePanel = False
+  end
+  object grid: TStringGrid
+    Left = 0
+    Height = 199
+    Top = 50
+    Width = 398
+    Align = alClient
+    ColCount = 3
+    Columns = <    
+      item
+        Title.Caption = 'Tarea'
+      end    
+      item
+        Title.Caption = 'Descripción'
+      end    
+      item
+        ButtonStyle = cbsCheckboxColumn
+        Title.Caption = 'Terminada'
+        ValueChecked = 'True'
+        ValueUnchecked = 'False'
+      end>
+    FixedCols = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goRowSelect, goThumbTracking, goSmoothScroll]
+    RowCount = 2
+    TabOrder = 2
+  end
+end
