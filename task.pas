@@ -34,6 +34,9 @@ type
 
       // static
       class function getAll(idUser: integer): TList<TTask>; static;
+      class function insert(task: TTask): integer; static;
+      class procedure update(task: TTask); static;
+      class procedure delete(id: integer); static;
   end;
 
 implementation
@@ -87,6 +90,44 @@ begin
     );
     Result.Add(task);
   end;
+end;
+
+class function TTask.insert(task: TTask): integer;
+const
+  SQL = 'INSERT INTO tasks(idUser, title, description, isDone) ' +
+        'VALUES(:idUser, :title, :description, :isDone) ' +
+        'RETURNING id';
+begin
+  Result:=TSQLite.scalar(SQL, [
+    task.idUser,
+    task.title,
+    task.description,
+    task.isDone
+  ]);
+end;
+
+class procedure TTask.update(task: TTask);
+const
+  SQL = 'UPDATE tasks SET ' +
+          'title = :title,' +
+          'description = :description,' +
+          'isDone = :isDone ' +
+        'WHERE id = :id';
+begin
+  // do not change idUser
+  TSQLite.execute(SQL, [
+    task.title,
+    task.description,
+    task.isDone,
+    task.id
+  ]);
+end;
+
+class procedure TTask.delete(id: integer);
+const
+  SQL='DELETE FROM tasks WHERE id = :id';
+begin
+  TSQLite.execute(SQL, [id]);
 end;
 
 end.

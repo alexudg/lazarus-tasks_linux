@@ -15,16 +15,22 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, ComCtrls,
-  Grids, Generics.Collections, Task;
+  Grids, StdCtrls, Generics.Collections, Task,
+  uInsUpdTask;
 
 type
 
   { TfrmMain }
 
   TfrmMain = class(TForm)
+    btnInsert: TButton;
+    btnUpdate: TButton;
+    btnDelete: TButton;
     Panel1: TPanel;
     bar: TStatusBar;
     grid: TStringGrid;
+    procedure btnClick(Sender: TObject);
+    procedure btnDeleteClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
   private
     _tasks: TList<TTask>;
@@ -47,6 +53,40 @@ begin
   _loadTasks();
 end;
 
+procedure TfrmMain.btnClick(Sender: TObject);
+var
+  isInsert: boolean;
+  mr: TModalResult;
+  id: integer;
+begin
+  isInsert:=(Sender as TButton).Tag = 3;
+  frmInsUpdTask:=TfrmInsUpdTask.Create(nil);
+  if (isInsert) then
+  begin
+    frmInsUpdTask.task:=TTask.Create;
+    frmInsUpdTask.task.id:=-1;
+  end
+  else
+    frmInsUpdTask.task:=_tasks[grid.Row - 1];
+  mr:=frmInsUpdTask.ShowModal();
+  id:=frmInsUpdTask.task.id;
+  FreeAndNil(frmInsUpdTask);
+  if (mr = mrOk) then
+    _loadTasks(id);
+end;
+
+procedure TfrmMain.btnDeleteClick(Sender: TObject);
+var
+  id: integer;
+begin
+  if (MessageDlg('ELIMINAR', '¿Estás segur@ de eliminar la tarea seleccionada?', mtWarning, [mbYes, mbNo], 0) = mrYes) then
+  begin
+    id:=_tasks[grid.Row - 1].id;
+    TTask.delete(id);
+    _loadTasks();
+  end;
+end;
+
 procedure TfrmMain._loadTasks(idSelect: integer);
 var
   i: integer;
@@ -63,6 +103,8 @@ begin
       Cells[0, i + 1]:=task.title;
       Cells[1, i + 1]:=task.description;
       Cells[2, i + 1]:=BoolToStr(task.isDone, true);
+      if (task.id = idSelect) then
+        Row:=i + 1;
     end;
     AutoSizeColumns;
   end;

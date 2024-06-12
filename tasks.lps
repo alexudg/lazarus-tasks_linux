@@ -8,9 +8,27 @@
         <Filename Value="tasks.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="10"/>
-        <CursorPos Y="18"/>
+        <CursorPos X="20" Y="11"/>
         <UsageCount Value="25"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uinsupdtask.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmInsUpdTask"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uInsUpdTask"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="3" Y="73"/>
+        <UsageCount Value="24"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unit1.pas"/>
+        <ComponentName Value="Form1"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit1"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="21"/>
       </Unit>
       <Unit>
         <Filename Value="umain.pas"/>
@@ -18,84 +36,38 @@
         <ComponentName Value="frmMain"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="56"/>
-        <CursorPos X="51" Y="65"/>
-        <UsageCount Value="25"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="94"/>
+        <CursorPos X="3" Y="62"/>
+        <UsageCount Value="20"/>
       </Unit>
       <Unit>
-        <Filename Value="usqlite.pas"/>
+        <Filename Value="task.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="uSqlite"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="117"/>
-        <CursorPos X="14" Y="173"/>
-        <UsageCount Value="25"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
+        <CursorPos X="3" Y="101"/>
+        <UsageCount Value="20"/>
       </Unit>
       <Unit>
         <Filename Value="/usr/share/fpcsrc/3.2.2/packages/rtl-generics/src/generics.collections.pas"/>
         <UnitName Value="Generics.Collections"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="114"/>
-        <CursorPos X="14" Y="121"/>
+        <TopLine Value="1179"/>
+        <CursorPos X="9" Y="1185"/>
         <UsageCount Value="10"/>
       </Unit>
       <Unit>
-        <Filename Value="task.pas"/>
+        <Filename Value="usqlite.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="18"/>
-        <CursorPos X="7" Y="25"/>
-        <UsageCount Value="21"/>
-        <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
+        <UnitName Value="uSqlite"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="50"/>
+        <CursorPos X="6" Y="62"/>
+        <UsageCount Value="20"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="9">
-      <Position>
-        <Filename Value="task.pas"/>
-        <Caret Line="22" Column="23" TopLine="19"/>
-      </Position>
-      <Position>
-        <Filename Value="task.pas"/>
-        <Caret Line="28" Column="39" TopLine="20"/>
-      </Position>
-      <Position>
-        <Filename Value="task.pas"/>
-        <Caret Line="29" Column="21" TopLine="18"/>
-      </Position>
-      <Position>
-        <Filename Value="task.pas"/>
-        <Caret Line="33" Column="68" TopLine="27"/>
-      </Position>
-      <Position>
-        <Filename Value="umain.pas"/>
-        <Caret Line="28" Column="50" TopLine="21"/>
-      </Position>
-      <Position>
-        <Filename Value="umain.pas"/>
-        <Caret Line="50" Column="26" TopLine="37"/>
-      </Position>
-      <Position>
-        <Filename Value="umain.pas"/>
-        <Caret Line="54" Column="28" TopLine="41"/>
-      </Position>
-      <Position>
-        <Filename Value="umain.pas"/>
-        <Caret Line="45" Column="11" TopLine="38"/>
-      </Position>
-      <Position>
-        <Filename Value="umain.pas"/>
-        <Caret Line="52" Column="7" TopLine="45"/>
-      </Position>
-      <Position>
-        <Filename Value="umain.pas"/>
-        <Caret Line="53" Column="7" TopLine="46"/>
-      </Position>
-    </JumpHistory>
+    <JumpHistory HistoryIndex="-1"/>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode=""/>

@@ -1,6 +1,6 @@
 program tasks;
 
-{$mode Delphi}{$H+}
+{$mode objfpc}{$H+}
 
 uses
   {$IFDEF UNIX}
@@ -10,7 +10,8 @@ uses
   athreads,
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, umain, uSqlite, task
+  Forms,
+  uMain, uInsUpdTask, task, uSqlite
   { you can add units after this };
 
 {$R *.res}

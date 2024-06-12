@@ -14,7 +14,41 @@ object frmMain: TfrmMain
     Top = 0
     Width = 398
     Align = alTop
+    ClientHeight = 50
+    ClientWidth = 398
     TabOrder = 0
+    object btnInsert: TButton
+      Tag = 3
+      Left = 322
+      Height = 48
+      Top = 1
+      Width = 75
+      Align = alRight
+      Caption = 'Nueva'
+      TabOrder = 0
+      OnClick = btnClick
+    end
+    object btnUpdate: TButton
+      Tag = 2
+      Left = 247
+      Height = 48
+      Top = 1
+      Width = 75
+      Align = alRight
+      Caption = 'Modificar'
+      TabOrder = 1
+      OnClick = btnClick
+    end
+    object btnDelete: TButton
+      Left = 172
+      Height = 48
+      Top = 1
+      Width = 75
+      Align = alRight
+      Caption = 'Eliminar'
+      TabOrder = 2
+      OnClick = btnDeleteClick
+    end
   end
   object bar: TStatusBar
     Left = 0

@@ -56,7 +56,10 @@ begin
     try
       _qry.Open;
       if (_qry.RecordCount > 0) then
+      begin
         Result:=_qry.Fields[0].Value;
+        _tra.Commit; // important!
+      end;
     except
       on e: Exception do
         Writeln('Error: ' + e.Message);
