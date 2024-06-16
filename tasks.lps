@@ -9,7 +9,7 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="20" Y="11"/>
-        <UsageCount Value="25"/>
+        <UsageCount Value="28"/>
       </Unit>
       <Unit>
         <Filename Value="uinsupdtask.pas"/>
@@ -20,15 +20,7 @@
         <UnitName Value="uInsUpdTask"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="3" Y="73"/>
-        <UsageCount Value="24"/>
-      </Unit>
-      <Unit>
-        <Filename Value="unit1.pas"/>
-        <ComponentName Value="Form1"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="Unit1"/>
-        <EditorIndex Value="-1"/>
-        <UsageCount Value="21"/>
+        <UsageCount Value="27"/>
       </Unit>
       <Unit>
         <Filename Value="umain.pas"/>
@@ -39,14 +31,31 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="94"/>
         <CursorPos X="3" Y="62"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="23"/>
       </Unit>
       <Unit>
         <Filename Value="task.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="3" Y="101"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="23"/>
+      </Unit>
+      <Unit>
+        <Filename Value="usqlite.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uSqlite"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="50"/>
+        <CursorPos X="6" Y="62"/>
+        <UsageCount Value="23"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unit1.pas"/>
+        <ComponentName Value="Form1"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit1"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="21"/>
       </Unit>
       <Unit>
         <Filename Value="/usr/share/fpcsrc/3.2.2/packages/rtl-generics/src/generics.collections.pas"/>
@@ -57,17 +66,25 @@
         <UsageCount Value="10"/>
       </Unit>
       <Unit>
-        <Filename Value="usqlite.pas"/>
+        <Filename Value="user.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="uSqlite"/>
         <IsVisibleTab Value="True"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="50"/>
-        <CursorPos X="6" Y="62"/>
-        <UsageCount Value="20"/>
+        <TopLine Value="45"/>
+        <CursorPos X="21" Y="65"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory HistoryIndex="1">
+      <Position>
+        <Filename Value="user.pas"/>
+        <Caret Line="21" Column="10" TopLine="7"/>
+      </Position>
+      <Position>
+        <Filename Value="user.pas"/>
+        <Caret Line="30" Column="51" TopLine="24"/>
+      </Position>
+    </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode=""/>

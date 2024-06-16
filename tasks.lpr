@@ -11,7 +11,7 @@ uses
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
   Forms,
-  uMain, uInsUpdTask, task, uSqlite
+  uMain, uInsUpdTask, task, uSqlite, user
   { you can add units after this };
 
 {$R *.res}
